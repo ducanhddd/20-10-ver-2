@@ -653,29 +653,35 @@
       pointer-events: none;
     }
 
-    .envelope-stage-box.opened .env-letter-card {
+   .envelope-stage-box.opened .env-letter-card {
       opacity: 1;
-      transform: translateY(-95px) scale(1.12);
-      height: 310px;
+      width: 560px;
+      height: 430px;
+      left: 50%;
+      right: auto;
+      transform: translate(-50%, -155px) scale(1);
+      padding: 28px 30px;
       z-index: 12;
       pointer-events: auto;
     }
 
     .letter-greeting-title {
       font-family: 'Dancing Script', cursive;
-      font-size: 24px;
+      font-size: 28px;
       color: #c91860;
       text-align: center;
-      margin-bottom: 8px;
+      margin-bottom: 12px;
     }
 
     .typewriter-body {
-      font-size: 14.5px;
-      line-height: 1.6;
+      font-size: 16px;
+      line-height: 1.65;
       color: #3d1229;
       font-weight: 600;
       flex: 1;
       overflow-y: auto;
+      white-space: pre-line;
+      padding-right: 8px;
     }
 
     .typewriter-cursor {
@@ -1729,7 +1735,7 @@
 
     /* Nội dung bức thư chung ở Giai đoạn 4 */
     const GENERAL_LETTER_CONTENT =
-      "Gửi cô và các bạn nữ 12B2 yêu quý! Nhân ngày Phụ nữ Việt Nam 20/10, em xin gửi đến cô và các bạn nữ những lời chúc tốt đẹp và chân thành nhất. Cảm ơn cô vì đã luôn tận tâm, kiên nhẫn và dịu dàng trong từng bài giảng. Cô không chỉ dạy chúng em con chữ, mà còn dạy cách làm người - biết yêu thương, biết cố gắng và không ngừng tin vào bản thân. Có lẽ, trong hành trình trưởng thành của mỗi học trò, sẽ luôn có hình bóng một người cô đã từng ân cần chỉ bảo, từng mỉm cười khi chúng em tiến bộ, và từng bao dung khi chúng em vấp ngã. Em chúc cô luôn mạnh khỏe, hạnh phúc, và mãi giữ được ngọn lửa yêu nghề trong tim. Cảm ơn cô - người phụ nữ tuyệt vời đã gieo vào lòng chúng em niềm tin và tri thức. Cảm ơn các bạn nữ đã luôn mang đến cho lớp mình sự dịu dàng, nhiệt huyết và tiếng cười vui tươi mỗi ngày. Hôm nay cũng là dịp đặc biệt khi chúng ta chỉ còn 1/3 chặng đường được cùng nhau đến lớp, cùng nhau chia sẻ những chuyện vui buồn và cùng nhau nỗ lực để chạm tới ước mơ. Mong rằng tập thể lớp mình sẽ luôn đoàn kết, cùng nhau cố gắng và gắn bó hơn nữa trong chặng đường sắp tới. Chúc các bạn nữ luôn xinh đẹp, hạnh phúc và thành công trong mọi điều mình lựa chọn.";
+      "Gửi cô và các bạn nữ 12B2 yêu quý! Nhân ngày Phụ nữ Việt Nam 20/10,chúng em xin gửi đến cô và các bạn nữ những lời chúc tốt đẹp và chân thành nhất.Cảm ơn cô vì đã luôn tận tâm, kiên nhẫn và dịu dàng trong từng bài giảng. Cô không chỉ dạy chúng em con chữ, mà còn dạy cách làm người - biết yêu thương, biết cố gắng và không ngừng tin vào bản thân.Có lẽ, trong hành trình trưởng thành của mỗi học trò, sẽ luôn có hình bóng một người cô đã từng ăn căn chỉ bảo, từng mỉm cười khi chúng em tiến bộ, và từng bao dung khi chúng em vấp ngã.Chúng em chúc có luôn mạnh khỏe, hạnh phúc, và mài giữ được ngọn lửa yêu nghề trong tim.Cảm ơn cô - người phụ nữ tuyệt vời đã gieo vào lòng chúng em niềm tin và tri thức.Cảm ơn các bạn nữ đã luôn mang đến cho lớp mình sự dịu dàng, nhiệt huyết và tiếng cười vui tươi mỗi ngày. Hôm nay cũng là dịp đặc biệt khi chúng ta chỉ còn 1/3 chặng đường được cùng nhau đến lớp, cùng nhau chia sẻ những chuyện vui buồn và cùng nhau nỗ lực để chạm tới ước mơ. Mong rằng tập thể lớp mình sẽ luôn đoàn kết, cùng nhau cố gắng và gắn bó hơn nữa trong chặng đường sắp tới.Chúc các bạn nữ luôn xinh đẹp, hạnh phúc và thành công trong mọi điều mình lựa chọn.";
 
     /* Danh sách 18 câu trích dẫn / lời khen trên khối cầu 3D ở Giai đoạn 3 */
     const SPHERE_QUOTES = [
